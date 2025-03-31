@@ -2,6 +2,7 @@
 #include "Automata.h"
 
 #include <chrono>
+#include <string>
 #include <thread>
 
 void Automata::on() {
