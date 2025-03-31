@@ -8,7 +8,7 @@
 enum class STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
 
 class Automata {
-public:
+ public:
     void on();
     void off();
     void coin(int money);
@@ -26,7 +26,7 @@ public:
         : out_stream_(out_stream), cash_(0), state_(STATES::OFF), menu_(menu) {
     }
 
-private:
+ private:
     std::ostream &out_stream_;
     int cash_;
     std::map<std::string, int> menu_;
