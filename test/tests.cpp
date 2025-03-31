@@ -4,6 +4,9 @@
 
 #include "Automata.h"
 
+#include <iostream>
+#include <string>
+
 TEST(automata_test, starting) {
   Automata a{std::cout};
   ASSERT_EQ(STATES::OFF, a.getState());

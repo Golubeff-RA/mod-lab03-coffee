@@ -18,10 +18,11 @@ public:
     void printMenu();
     int getCash();
     void change();
-    Automata(std::ostream &out_stream, const std::map<std::string, int> &menu = {{"Espresso", 100},
-                                                                                 {"Americano", 150},
-                                                                                 {"Cappucino", 200},
-                                                                                 {"Latte", 250}})
+    Automata(std::ostream &out_stream,
+             const std::map<std::string, int> &menu = {{"Espresso", 100},
+                                                       {"Americano", 150},
+                                                       {"Cappucino", 200},
+                                                       {"Latte", 250}})
         : out_stream_(out_stream), cash_(0), state_(STATES::OFF), menu_(menu) {
     }
 
